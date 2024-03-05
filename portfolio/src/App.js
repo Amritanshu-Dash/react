@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import SocialProfiles from "./myComponents/socialProfiles";
+import TechStack from "./myComponents/techStack";
+import { RiStackFill } from "react-icons/ri";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="arrange">
+
+      <h1>Amritanshu Dash</h1>
+      <SocialProfiles />
+
+      <p>
+        Hey hey, I'm Amritanshu Dash, a fresh face in the software scene, rocking my final year of college!
+        <br />
+        Don't let the 'newbie' title fool you—I've got the passion and drive to rival the pros!
+      </p>
+
+      <h1>My Tech Stack <RiStackFill /></h1>
+      <TechStack />
+
     </div>
   );
 }
 
-export default App;
+export default App; 

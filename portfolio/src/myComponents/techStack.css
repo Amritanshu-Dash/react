@@ -1,0 +1,29 @@
+.container {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.Content {
+    color: aliceblue;
+    align-items: center;
+    font-size: 100%;
+    text-align:center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.vertical-line {
+    border-left: 5px solid white;
+    height: 100px;
+}
+
+h4{
+    white-space: nowrap;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    white-space: nowrap;
+}
