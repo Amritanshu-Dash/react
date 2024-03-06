@@ -1,5 +1,6 @@
 import React from "react";
 import homeStore from "../store/homeStore";
+import { Link } from "react-router-dom";
 
 export default function Home() {
 
@@ -11,6 +12,15 @@ export default function Home() {
   return (
     <div>
       Home
+      {store.coins.map(coin=>{
+        return(
+          <div key={coin.id}> 
+            <Link to={`/${coin.id}`}>
+              {coin.name}
+            </Link>
+          </div>
+        )
+      })}
     </div>
   )
 }
